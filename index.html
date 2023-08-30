@@ -1,41 +1,118 @@
 <p>Hello World</p>
 <h2>This is Git tutorial</h2>
 
-***************   ******************   ********************   *****************
+*************** ****************** ******************** *****************
 
-M -> that is mean is Modified file, or some chnages in this file
+GIT -
+Version Control system is a tools that helps to track changes in code. 
 
-U -> Untrack file, that mean Git is not tracking this file, this is new file
+Git is version control System it is:
+- Popular
+- Free and open source 
+- Fast and scalable 
 
-ls -h -> mean show list of hidden file
+Uses - 
+1. To track the History 
+2. Collaborate 
 
-***************   ******************   ********************   *****************
+*************** ****************** ******************** *****************
 
-git push origin main -> for push file to GitHub
-> git psuh -> mean push file to git repo
-> origin -> mean origin repo from all repo where we done clone , this is called origin
-> main -> branch
+GIt Hub 
+Website that allows developers to store and menage their code using Git.
 
-***************   ******************   ********************   *****************
+*************** ****************** ******************** *****************
+
+Configuring Git 
+git config --global user.name "My name(github acc name)" 
+git config --global user.email "email edd."
+git config --list  (to varify what detail we added)
+
+*************** ****************** ******************** *****************
+
+Clone and Status 
+Clone - Cloning a respository on our local machine  (go to repository and click code, then copy https link and paste here)
+        git clone --some link--
+
+Status - Display the status of code  ->  git status 
+
+*************** ****************** ******************** *****************
+
+M -- that is mean is Modified file, or some chnages in this file
+
+U -- Untrack file, that mean Git is not tracking this file, this is new file
+
+Stage - file is ready to be commit 
+
+unmodified - unchanged 
+
+ls -h -- mean show list of hidden file
+
+*************** ****************** ******************** *****************
+
+For upload the code on GitHub ( Add and Commit )
+Add - 
+adds new or changes file in your working directory to the Git staging area 
+ git add --file name--  /or  git add . (for combine all files) 
+ 
+Commit - 
+it is the record of changes 
+git commit -m "some message what you change"
+
+*************** ****************** ******************** *****************
+
+git push origin main -- for push file to GitHub
+> git psuh -- mean push file to git repo
+> origin -- mean origin repo from all repo where we done clone , this is called origin
+> main -- branch
+
+*************** ****************** ******************** *****************
 
 init command -
 init - used to create a new git repo
 
 git init
 
-git remove add origin <-link here->
+git remove add origin --link here--
 
-    git remove -v (to varify remote)
+git remove -v (to varify remote)
 
-    git branch (to check branch)
+git branch (to check branch)
 
-    git branch -M main (to remove branch)
+git branch -M main (to remove branch)
 
-    git push origin main
+git push origin main -- when we push few file
 
-***************   ******************   ********************   *****************
-back to previous Folder ->    cd ..
+git push -u -- when you want to push more file in same Repository then use it
 
-make new folder  ->  mkdir <-foldername->
+*************** ****************** ******************** *****************
+back to previous Folder -- cd ..
 
-Enter in new folder  ->  cd <-foldername->
+make new folder - mkdir --foldername--
+
+Enter in new folder - cd --foldername--
+
+*************** ****************** ******************** *****************
+Branch Commmands
+
+- git branch - (to check branch)
+
+- git branch -M main ( to rename branch)
+
+- git checkout --branch name-- (to nevigate)
+
+- git checkout -b --new branch name-- ( to create new branch)
+
+- git branch -d --branch name-- (to delete branch)
+
+*************** ****************** ******************** *****************
+Merging Code
+way 1 -
+- git diff --branch name-- (to compare commit , branches , file and more)
+
+- git merge --branch name-- (to merge 2 branches)
+
+way 2
+- Craete a PR (Pull Request)
+
+Merge conflicts
+An event that takes place when Git is unable to automatically resolve differences in code between two commits.
